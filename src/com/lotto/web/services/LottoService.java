@@ -6,8 +6,8 @@ public interface LottoService {
 	public void createLotto(LottoBean param);
 	public String createLotteryNum();
 	public String createLottoSeq();
-	public String createBall();
-	public boolean duplicatePrevention(int[] arr);
-	public String ascendingSort(int[] arr);
+	public int createBall();
+	public boolean exist(int[] arr, int a);
+	public int[] bubbleSort(int[] arr, boolean flag);
 }
 
