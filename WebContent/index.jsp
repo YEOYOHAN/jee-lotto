@@ -1,21 +1,37 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+<%@ page language="java"   contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>로또 프로그램</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<title>비트 로또</title>
+<script   src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-<form id="lotto"action="<%=request.getContextPath() %>/lotto.do">
-	입금액 <input type="text" name="money" value="1000"/>
-	<input type="submit" value="로또번호생성"/>
+<div>
+   <h2>환영합니다</h2>
+   <table border='1'>
+      <tr>
+          <td>로그인</td>
+          <td><input id="btn"   type="button" value="LOGIN" /></td>
+      </tr>
+      <tr>
+          <td>고객정보등록</td>
+          <td><a id="a_register"   href="#">바로가기</a></td>
+      </tr>
+   </table>
+   
+</div>
 <script>
-$('#lotto').submit(function() {
-	alert('금액 넘어옴');
+$('#btn').click(function(){
+   alert('버튼 클릭 !!');
+	location.assign('<%=request.getContextPath() %>/consumer.do?action=move&dest=login');
 });
-</script>	
-</form>
+$('#a_register').click(function() {
+   alert('버튼 클릭 !!');
+	location.assign('<%=request.getContextPath() %>/consumer.do?action=move&dest=join');
+});
+</script>
 </body>
+   
 </html>

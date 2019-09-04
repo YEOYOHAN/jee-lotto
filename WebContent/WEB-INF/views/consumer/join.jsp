@@ -9,13 +9,15 @@
 </head>
 <body>
 	<h1>회원가입</h1>
-	<form id="consumer" action="<%=request.getContextPath() %>/consumer.do">
+	<form id="join_form" action="<%=request.getContextPath() %>/consumer.do">
 		ID <input type="text" name="cid"/><br />
 		PASS <input type="password" name="pass"/><br />
-	<input type="submit" value="전송"/>
+		<input type="hidden" name="action" value="join"/>
+		<input type="hidden" name="dest" value="login"/>
+		<input type="submit" name="btn" value="전송"/>
 	</form>
 <script>
-$('#consumer').submit(function() {
+$('#join_form').submit(function() {
 	alert('제이쿼리 테스트');
 });
 </script>

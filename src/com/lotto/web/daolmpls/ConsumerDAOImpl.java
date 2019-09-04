@@ -1,4 +1,4 @@
-package com.lotto.web.doalmpls;
+package com.lotto.web.daolmpls;
 
 import javax.swing.JOptionPane;
 import java.io.BufferedWriter;
@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.io.FileReader;
 
-import com.lotto.web.doas.ConsumerDAO;
+import com.lotto.web.daos.ConsumerDAO;
 import com.lotto.web.domains.ConsumerBean;
 
 public class ConsumerDAOImpl implements ConsumerDAO{

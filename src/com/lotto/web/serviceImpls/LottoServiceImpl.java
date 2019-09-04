@@ -2,8 +2,8 @@ package com.lotto.web.serviceImpls;
 
 import java.util.Random;
 
-import com.lotto.web.doalmpls.LottoDAOImpl;
-import com.lotto.web.doas.LottoDAO;
+import com.lotto.web.daolmpls.LottoDAOImpl;
+import com.lotto.web.daos.LottoDAO;
 import com.lotto.web.domains.LottoBean;
 import com.lotto.web.services.LottoService;
 

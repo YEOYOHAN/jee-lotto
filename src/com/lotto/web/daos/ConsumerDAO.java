@@ -1,4 +1,4 @@
-package com.lotto.web.doas;
+package com.lotto.web.daos;
 
 import com.lotto.web.domains.ConsumerBean;
 
